@@ -1,3 +1,66 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Set X-XSS-Protection header to 0 -->
+    <meta http-equiv="X-XSS-Protection" content="0">
+
+    <!-- Content Security Policy Header -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';                    /* Allow resources from the same origin */
+        script-src 'self' https://example.com; /* Allow scripts from the same origin and from example.com */
+        style-src 'self' https://example.com;  /* Allow styles from the same origin and from example.com */
+        img-src 'self' data: https://example.com;  /* Allow images from the same origin, data URLs, and from example.com */
+        ">
+
+	<!--rich preview tags -->
+	<!--https://www.emergeagency.com/insights/detail/rich-video-previews-in-ios-macos-messages/-->
+	
+	<!--
+	<meta property="og:url:" content="" />
+	<meta property="og:title:" content="" />
+	<meta property="og:site_name:" content="" />
+	<meta property="og:image:" content="" />
+	<meta property="og:description:" content="" />
+	<meta property="og:video" content="http://www.example.com/video/myvideo.mp4" />
+	<meta property="og:video:type" content="video/mp4" />
+	<meta property="og:video:width" content="1280" />
+	<meta property="og:video:height" content="720" />
+	-->
+	
+	<!--https://www.emergeagency.com/insights/detail/The-Essentials-of-FavIcons/-->
+	<!-- generics -->
+	<link rel="icon" href="/favicons/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="/favicons/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="/favicons/favicon-192.png" sizes="192x192">
+	
+	<!-- Android -->
+	<link rel="shortcut icon" href="/favicons/favicon-196.png" sizes="196x196">
+	
+	<!-- iOS -->
+	<link rel="apple-touch-icon" href="/favicons/favicon-120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="/favicons/favicon-152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="/favicons/favicon-180.png" sizes="180x180">
+	
+	<!-- Windows 8 IE 10-->
+	<meta name="msapplication-TileColor" content="#f47302">
+	<meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
+	
+	<!— Windows 8.1 + IE11 and above —>
+	<meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <title>Welcome to mattbailey.tech</title>
+    <!-- Your other meta tags, stylesheets, and scripts go here -->
+</head>
+
+<body>
+    <!-- Your HTML content goes here -->
+	<div>
+		<h1>Welcome to mattbailey.tech</h1>
+		<p>This page is likely not to get much fancier for a long time.</p>
+		<img src="smalltile.png">
+	</div>
+</body>
+</html>
